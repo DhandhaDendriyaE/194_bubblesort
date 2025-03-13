@@ -30,6 +30,20 @@ for (int i=0;i<n;i++){
                 arr[j+1] = temp;
             }
         }
+        pass = pass + 1;
         
-    } 
+    } while (pass<=n-1);
 }
+
+void printArray(){
+    cout << arr[i] << " ";
+}
+cout << endl;
+
+int main() {
+input(); 
+bubbleSortArray(); 
+printArray();
+return 0;
+}
+
